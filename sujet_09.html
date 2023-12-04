@@ -100,15 +100,17 @@
             if ((isNaN(n)) || (n === ' '))
                 alert("Entrez un nombre");
 
-            // multiplie n jusqu'à 10, puis incrémente n de 1
+            
             else {
-                for (let n = 1; n < 10; n++) {
+                // Incrémente x jusqu'à n
+                for (let x = 1; x < n + 1; x++) {
 
-                    for (let i = 1; i < 10; i++) {
-                        tab.push(n * i);
+                    //table de x jusqu'à 10 (11), intègre les produits au tab
+                    for (let i = 1; i < 11; i++) {
+                        tab.push(x * i);
                     }
                 }
-                // affiche produits dans la console
+                // affiche tab dans la console
                 console.log(` ${tab}`);
 
             }
